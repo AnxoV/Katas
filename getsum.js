@@ -1,5 +1,8 @@
+/**
+ * @param {Int} a The first number
+ * @param {Int} b The second number
+ * @returns {Int} The sum of consecutive numbers from a to b 
+ */
 function getSum(a, b) {
-    return Math.abs((a*(a+1)/2) - (b*(b+1)/2));
+    return (a+b)*(Math.abs(a-b)+1) / 2;
 }
-
-console.log(getSum(2, 100))
